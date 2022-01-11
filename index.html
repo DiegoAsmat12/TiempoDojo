@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>DojoWeather</h1>
+            <ul class="navbar-links">
+                <li class="navbar-link">Burbank</li>
+                <li class="navbar-link">Chicago</li>
+                <li class="navbar-link">Dallas</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-header">
+            <h3 class="city">San Jose</h3>
+            <div class="temperature-selection">
+                <label for="temperature-select">show temperature in</label>
+                <select name="temperature-degree-system" id="temperature-select">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="weather-card">
+                <h4 class="card-title">Today</h4>
+                <img src="./img/some_rain.png" alt="some_rain icon" class="weather-icon">
+                <span class="weather-description">some rain</span>
+                <div class="temperature-predictions">
+                    <span class="temperature max-temperature">24°</span>
+                    <span class="temperature min-temperature">18°</span>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4 class="card-title">Tomorrow</h4>
+                <img src="./img/some_sun.png" alt="some_sun icon" class="weather-icon">
+                <span class="weather-description">some sun</span>
+                <div class="temperature-predictions">
+                    <span class="temperature max-temperature">27°</span>
+                    <span class="temperature min-temperature">19°</span>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4 class="card-title">Friday</h4>
+                <img src="./img/some_clouds.png" alt="some_clouds icon" class="weather-icon">
+                <span class="weather-description">some clouds</span>
+                <div class="temperature-predictions">
+                    <span class="temperature max-temperature">21°</span>
+                    <span class="temperature min-temperature">16°</span>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4 class="card-title">Saturday</h4>
+                <img src="./img/some_sun.png" alt="some_sun icon" class="weather-icon">
+                <span class="weather-description">some sun</span>
+                <div class="temperature-predictions">
+                    <span class="temperature max-temperature">26°</span>
+                    <span class="temperature min-temperature">21°</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cookie-policies">
+        <img src="./img/cookie.png" alt="cookie-icon" class="cookie-icon">
+        <div class="cookie-info">
+            <p class="cookie-title">Stop! Cookie time</p>
+            <p class="cookie-description">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button class="accept-cookies" onclick="closeCookies(this)">I Accept</button>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

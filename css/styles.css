@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*generales*/
+body{
+    font-family: 'Balsamiq Sans';
+    font-size: 26px;
+}
+ul{
+    list-style: none;
+}
+
+
+/*header*/
+header{
+    padding: 0px 10%;
+    background-color: rgb(132, 192, 248);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 15px 0px;
+}
+.navbar-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    
+}
+.navbar-link{
+    margin:0px 15px;
+    font-weight: 200;
+}
+
+/*main*/
+main{
+    padding: 0 10%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.main-header .city{
+    font-weight: 300;
+}
+.temperature-selection{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.temperature-selection>*{
+    margin: 10px;
+    font-size: 18px;
+}
+#temperature-select{
+    border: 1px solid black;
+    padding: 0px 2px;
+    font-size: 20px;
+}
+.main-body{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    gap: 30px;
+}
+.weather-card{
+    flex:1;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    min-height: 350px;
+    justify-content: space-between;
+}
+.weather-card>*{
+    margin:15px 0px;
+}
+.card-title{
+    font-size: 34px;
+    font-weight: 200;
+}
+.weather-icon{
+    width: 70%;
+    background-color: white;
+    border-radius: 50%;
+}
+.weather-description{
+    font-size: 18px;
+}
+.temperature-predictions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    text-align:center;
+}
+.temperature{
+    font-weight: bold;
+}
+.min-temperature{
+    color: rgb(0, 110, 255);
+}
+.max-temperature{
+    color: rgb(172, 0, 0);
+}
+
+/*Cookie policies*/
+.cookie-policies{
+    width: 80%;
+    position: fixed;
+    bottom: 10px;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    border: 2px solid black;
+}
+.cookie-info{
+    flex: 1;
+    margin:0px 20px;
+}
+.cookie-title{
+    font-weight: bold;
+    font-size: 24px;
+}
+.cookie-description{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.cookie-icon{
+    height: 90px;
+}
+.accept-cookies{
+    padding: 5px 15px;
+    font-family: 'Balsamiq Sans';
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: rgb(132, 192, 248);
+    box-shadow: 3px 3px black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+/*ocultar*/
+.hidden{
+    display: none;
+}
